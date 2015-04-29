@@ -14,7 +14,7 @@ long_description: |
   This is the version 0.6.1 of statsmodels.
 
   More details http://statsmodels.sourceforge.net/
-name: package_statsmodels_0_6_1
+name: package_statsmodels_0_6
 owner: vipints
-remote_repository_url: https://github.com/vipints/tool_dep_packages/tree/master/packages/package_statsmodels_0_6_1
+remote_repository_url: https://github.com/vipints/tool_dep_packages/tree/master/packages/package_statsmodels_0_6
 type: tool_dependency_definition
