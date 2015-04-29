@@ -1,0 +1,14 @@
+categories:
+- Tool Dependency Packages
+description: Contains a tool dependency definition that downloads and installs version 0.3.0 of the the python patsy package.
+long_description: |
+  Patsy is a Python library for describing statistical models and building design matrices. 
+  It is closely inspired by and compatible with the formula mini-language used in R and S.
+
+  This is the version 0.3.0 of patsy
+
+  More details http://patsy.readthedocs.org/
+name: package_patsy_0_3 
+owner: vipints
+remote_repository_url: https://github.com/vipints/tool_dep_packages/tree/master/packages/package_patsy_0_3 
+type: tool_dependency_definition
