@@ -1,20 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <tool_dependency>
-    
     <package name="python" version="2.7">
         <repository name="package_python_2_7" owner="iuc" prior_installation_required="True" />
     </package>
-
     <package name="numpy" version="1.8.1">
         <repository name="package_numpy_1_8" owner="iuc" prior_installation_required="True" />
     </package>
-    
     <package name="scipy" version="0.14">
         <repository name="package_scipy_0_14" owner="iuc" prior_installation_required="True" />
     </package>
-
     <package name="pandas" version="0.14.1">
         <repository name="package_pandas_0_14" owner="iuc" prior_installation_required="True" />
+    </package>
+    <package name="patsy" version="0.3.0">
+        <repository name="package_patsy_0_3" owner="vipints" prior_installation_required="True" />
     </package>
 
     <package name="statsmodels" version="0.6.1">
@@ -35,8 +34,6 @@
                 </action>
                 <action type="set_environment">
                     <environment_variable action="append_to" name="PYTHONPATH">$INSTALL_DIR/lib/python</environment_variable>
-                    <environment_variable action="append_to" name="PYTHONPATH">$ENV[PYTHONPATH_NUMPY]</environment_variable>
-                    <environment_variable action="prepend_to" name="PATH">$ENV[PATH_NUMPY]</environment_variable>
                 </action>
             </actions>
         </install>
