@@ -2,11 +2,18 @@ categories:
 - Tool Dependency Packages
 description: Contains a tool dependency definition that downloads and installs version 0.6.1 of the the python statsmodels package.
 long_description: |
-  StatsModels is a Python module that provides classes and functions for many different statistical data exploration.
+  StatsModels "Statistics in Python" is a Python module that provides statistical computing and data analysis. Features include:
+
+  a) Generalized linear models
+  b) Linear regression models
+  c) Nonparametric estimators
+  d) Robust linear models
+  e) A wide range of statistical tests
+  f) Many more models and extensions in development
 
   This is the version 0.6.1 of statsmodels.
 
-  http://statsmodels.sourceforge.net/
+  More details http://statsmodels.sourceforge.net/
 name: package_statsmodels_0_6_1
 owner: vipints
 remote_repository_url: https://github.com/vipints/tool_dep_packages/tree/master/packages/package_statsmodels_0_6_1
