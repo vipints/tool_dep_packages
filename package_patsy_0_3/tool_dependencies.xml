@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tool_dependency>
+    <package name="python" version="2.7">
+        <repository name="package_python_2_7" owner="iuc" prior_installation_required="True" />
+    </package>
+    <package name="numpy" version="1.8.1">
+        <repository name="package_numpy_1_8" owner="iuc" prior_installation_required="True" />
+    </package>
+
+    <package name="patsy" version="0.3.0">
+        <install version="1.0">
+            <actions>
+                <action type="download_by_url">https://pypi.python.org/packages/source/p/patsy/patsy-0.3.0.zip#md5=7545518b413136ba8343dcebea07e5e2</action>
+                <action type="set_environment_for_install">
+                    <repository name="package_numpy_1_8" owner="iuc">
+                        <package name="numpy" version="1.8.1" />
+                    </repository>
+                </action>
+                <action type="make_directory">$INSTALL_DIR/lib/python</action>
+                <action type="shell_command">
+                    export PYTHONPATH=$PYTHONPATH:$INSTALL_DIR/lib/python &amp;&amp;
+                    export PATH=$PATH:$PATH_NUMPY &amp;&amp;
+                    export PYTHONPATH=$PYTHONPATH:$PYTHONPATH_NUMPY &amp;&amp;
+                    python setup.py install --install-lib $INSTALL_DIR/lib/python
+                </action>
+                <action type="set_environment">
+                    <environment_variable action="append_to" name="PYTHONPATH">$INSTALL_DIR/lib/python</environment_variable>
+                </action>
+            </actions>
+        </install>
+        <readme>
+            Patsy - Describing statistical models in Python
+
+            http://patsy.readthedocs.org/
+        </readme>
+    </package>
+</tool_dependency>
